@@ -1,7 +1,6 @@
 import "./App.scss";
 import Header from "./components/Header";
 import Grid from "./components/Grid";
-import Card from "./components/Card";
 
 function App() {
   return (
