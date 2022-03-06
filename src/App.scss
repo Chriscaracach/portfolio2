@@ -25,17 +25,23 @@
   gap: 20px;
   padding: 10px;
   background-color: #fcffa6;
-  margin: 20px;
+  margin-top: 20px;
   width: 90%;
   &__typingtext {
     color: #333;
     font-size: 20px;
+    margin-left: 10px;
+
+    h3 {
+      margin: 0 auto;
+    }
   }
 
   &__social {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    padding-right: 10px;
   }
   &__icon {
     color: #333;
@@ -49,44 +55,34 @@
 }
 
 .subheader {
-  @include pixel-borders($corner-size: 2);
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   gap: 20px;
   padding: 10px;
-  background-color: #fcffa6;
-  margin: 20px;
   width: 90%;
-  &__typingtext {
-    color: #333;
-    font-size: 20px;
-  }
 
-  &__social {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+  &__button {
+    font-size: 8px;
+    width: 80px;
+    height: 30px;
   }
-  &__icon {
-    color: #333;
-    &:hover {
-      color: #555;
-    }
-  }
-  @media (min-width: 768px) {
-    flex-direction: row;
+  @media (max-width: 768px) {
+    justify-content: center;
   }
 }
-.grid {
+
+.grid-container {
   width: 90%;
+}
+.grid {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
+  margin-bottom: 20px;
   @media (min-width: 768px) {
     flex-direction: row;
   }

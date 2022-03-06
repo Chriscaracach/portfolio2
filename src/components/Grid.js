@@ -24,7 +24,12 @@ const Grid = ({ inEnglish }) => {
     );
   });
 
-  return <div className="nes-container grid">{map}</div>;
+  return (
+    <div className="nes-container is-centered with-title grid-container">
+      <h1 className="title">{!inEnglish ? "Proyectos" : "Projects"}</h1>
+      <div className="grid">{map}</div>
+    </div>
+  );
 };
 
 export default Grid;
