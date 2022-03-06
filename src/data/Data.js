@@ -4,7 +4,7 @@ export const data = [
     name: "SuperHero",
     esDescription: "Buscá tus superhéroes favoritos y armá tu equipo",
     enDescription: "Search your favorite superheroes and build your team",
-    url: "",
+    url: "https://superhero-search-iota.vercel.app/",
     repository: "https://github.com/Chriscaracach/superhero-search",
     tech: ["Bootstrap", "React", "Formik", "Redux", "Axios"],
   },
@@ -51,10 +51,22 @@ export const data = [
 export const otherProjects = [
   {
     id: 0,
-    name: "Frontend mentor - Card challenge of crypto currency layout display",
-    platform: "Gist",
-    repository: "asdivas",
+    name: "Frontend mentor - Bootstrap Card",
+    repository: "https://github.com/Chriscaracach/FEM4",
   },
-  { id: 0, name: "Calculadora", platform: "Gist", repository: "asdivas" },
-  { id: 0, name: "Calculadora", platform: "Gist", repository: "asdivas" },
+  {
+    id: 0,
+    name: "Frontend mentor - NFT Card",
+    repository: "https://github.com/Chriscaracach/FEM3",
+  },
+  {
+    id: 0,
+    name: "Frontend mentor - Profile card",
+    repository: "https://github.com/Chriscaracach/FEM1",
+  },
+  {
+    id: 0,
+    name: "Javascript calculator",
+    repository: "https://codepen.io/chriscaracach/details/JjbmBjy",
+  },
 ];

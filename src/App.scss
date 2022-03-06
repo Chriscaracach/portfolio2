@@ -1,3 +1,4 @@
+@use "./variables";
 @import "node_modules/pixel-borders/src/styles/pixel-borders.scss";
 
 .App {
@@ -8,10 +9,14 @@
   flex-direction: column;
   align-items: center;
   cursor: default !important;
-  height: 100vh;
   width: 100vw;
+  background-color: variables.$light;
+  color: variables.$dark;
 }
 
+.title {
+  background-color: variables.$light !important;
+}
 // fcffa6
 // C1FFD7
 // B5DEFF
@@ -24,7 +29,7 @@
   align-items: center;
   gap: 20px;
   padding: 10px;
-  background-color: #fcffa6;
+  background-color: variables.$semi-light;
   margin-top: 20px;
   width: 90%;
   &__typingtext {
@@ -90,7 +95,7 @@
 
 .card {
   @include pixel-borders($corner-size: 2);
-  background-color: #b5deff;
+  background-color: variables.$semi-dark;
   width: 250px;
   height: 300px;
   display: flex;
@@ -105,6 +110,7 @@
   }
   &__title {
     border-radius: 0px 0px 10px 10px;
+    background-color: variables.$light !important;
   }
   &__buttoncontainer {
     display: flex;
@@ -131,4 +137,8 @@
 .otherprojectscontainer {
   max-width: 70%;
   margin: 20px;
+
+  &__table {
+    background-color: variables.$semi-dark;
+  }
 }

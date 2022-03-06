@@ -20,7 +20,7 @@ const OtherProjects = ({ inEnglish }) => {
         {!inEnglish ? "Otros proyectos" : "Other projects"}
       </h1>
       <div class="nes-table-responsive">
-        <table class="nes-table is-bordered is-centered">
+        <table class="nes-table is-bordered is-centered otherprojectscontainer__table">
           <thead>
             <tr>
               <th>{!inEnglish ? "Proyecto" : "Project"}</th>
