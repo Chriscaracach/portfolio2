@@ -2,11 +2,11 @@ export const data = [
   {
     id: 0,
     name: "SuperHero Search",
-    img: "",
     esDescription: "Buscá tus superhéroes favoritos y armá tu equipo",
     enDescription: "Search your favorite superheroes and build your team",
     url: "",
     repository: "",
+    tech: ["HTML", "Bootstrap", "React", "Redux", "Firebase"],
   },
   {
     id: 1,
