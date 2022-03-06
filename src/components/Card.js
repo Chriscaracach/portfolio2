@@ -41,7 +41,7 @@ const Card = ({
         </div>
       ) : (
         <div className="nes-container with-title is-centered card">
-          <p className="title card__title">Título</p>
+          <p className="title card__title">{name}</p>
           <div className="card__infowrapper">
             <div className="card__bodycontainer">
               <div className="card__techcontainer">
