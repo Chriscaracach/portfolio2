@@ -1,6 +1,6 @@
 import React from "react";
 import TypeAnimation from "react-type-animation";
-import cvDownload from "../img/cv.png";
+import cvDownload from "../img/cvdownload.png";
 
 const Header = () => {
   return (
@@ -23,7 +23,12 @@ const Header = () => {
         />
       </div>
       <div className="header__social">
-        <a href="mailto:christiancaracach@gmail.com" className="header__icon">
+        <a
+          href="mailto:christiancaracach@gmail.com"
+          className="header__icon"
+          rel="noreferrer"
+          target="_blank"
+        >
           <i class="nes-icon gmail is-medium"></i>
         </a>
         <a
@@ -45,6 +50,8 @@ const Header = () => {
         <a
           href="https://drive.google.com/file/d/179K1idN3gYYNanOorZqJZu0dvpXBWF24/view?usp=sharing"
           className="header__icon"
+          rel="noreferrer"
+          target="_blank"
         >
           <img
             class="nes-avatar is-medium"

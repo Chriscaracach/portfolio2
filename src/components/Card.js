@@ -24,10 +24,20 @@ const Card = ({
             <p>{!inEnglish ? esDescription : enDescription}</p>
           </div>
           <div className="card__buttoncontainer">
-            <a className="nes-btn card__button" href={repository}>
+            <a
+              className="nes-btn card__button"
+              href={repository}
+              rel="noreferrer"
+              target="_blank"
+            >
               Repo
             </a>
-            <a className="nes-btn card__button" href={url}>
+            <a
+              className="nes-btn card__button"
+              href={url}
+              rel="noreferrer"
+              target="_blank"
+            >
               Site
             </a>
             <button
@@ -45,28 +55,38 @@ const Card = ({
           <div className="card__infowrapper">
             <div className="card__bodycontainer">
               <div className="card__techcontainer">
-                <a href="a" class="nes-badge">
+                <div href="a" class="nes-badge">
                   <span class="is-primary">{tech[0]}</span>
-                </a>
-                <a href="a" class="nes-badge">
-                  <span class="is-success">{tech[1]}</span>
-                </a>
-                <a href="a" class="nes-badge">
-                  <span class="is-warning">{tech[2]}</span>
-                </a>
-                <a href="a" class="nes-badge">
-                  <span class="is-error">{tech[3]}</span>
-                </a>
-                <a href="a" class="nes-badge">
-                  <span class="is-dark">{tech[4]}</span>
-                </a>
+                </div>
+                <div className="nes-badge">
+                  <span className="is-success">{tech[1]}</span>
+                </div>
+                <div className="nes-badge">
+                  <span className="is-warning">{tech[2]}</span>
+                </div>
+                <div className="nes-badge">
+                  <span className="is-error">{tech[3]}</span>
+                </div>
+                <div className="nes-badge">
+                  <span className="is-dark">{tech[4]}</span>
+                </div>
               </div>
             </div>
             <div className="card__buttoncontainer">
-              <a className="nes-btn card__button" href={repository}>
+              <a
+                className="nes-btn card__button"
+                href={repository}
+                rel="noreferrer"
+                target="_blank"
+              >
                 Repo
               </a>
-              <a className="nes-btn card__button" href={url}>
+              <a
+                className={"nes-btn card__button"}
+                href={url}
+                rel="noreferrer"
+                target="_blank"
+              >
                 Site
               </a>
               <button

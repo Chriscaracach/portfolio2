@@ -47,3 +47,14 @@ export const data = [
     tech: ["HTML", "CSS", "Bootstrap", "React", "Fetch"],
   },
 ];
+
+export const otherProjects = [
+  {
+    id: 0,
+    name: "Frontend mentor - Card challenge of crypto currency layout display",
+    platform: "Gist",
+    repository: "asdivas",
+  },
+  { id: 0, name: "Calculadora", platform: "Gist", repository: "asdivas" },
+  { id: 0, name: "Calculadora", platform: "Gist", repository: "asdivas" },
+];
