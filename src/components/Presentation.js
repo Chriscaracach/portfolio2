@@ -6,7 +6,7 @@ import { enPresentation } from "../data/Data";
 const Presentation = ({ inEnglish }) => {
   return (
     <div className="nes-container is-centered with-title presentation">
-      <h1 className="title">Sobre mí</h1>
+      <h1 className="title">{!inEnglish ? "Sobre mí" : "About me"}</h1>
       <div className="presentation__container">
         <img
           className="nes-avatar is-large presentation__img"
