@@ -1,4 +1,5 @@
 import "./App.scss";
+import Presentation from "./components/Presentation";
 import Header from "./components/Header";
 import Grid from "./components/Grid";
 import SubHeader from "./components/SubHeader";
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <SubHeader switchLang={switchLang} inEnglish={inEnglish}></SubHeader>
+      <Presentation inEnglish={inEnglish}></Presentation>
       <Grid inEnglish={inEnglish}></Grid>
       <OtherProjects inEnglish={inEnglish}></OtherProjects>
     </div>

@@ -7,7 +7,12 @@ const OtherProjects = ({ inEnglish }) => {
       <tr>
         <td>{project.name}</td>
         <td>
-          <a class="nes-btn" href={project.repository}>
+          <a
+            class="nes-btn"
+            href={project.repository}
+            rel="noreferrer"
+            target="_blank"
+          >
             Link
           </a>
         </td>
@@ -16,10 +21,13 @@ const OtherProjects = ({ inEnglish }) => {
   });
   return (
     <div className="nes-container is-centered with-title otherprojectscontainer">
-      <h1 className="title">
-        {!inEnglish ? "Otros proyectos" : "Other projects"}
-      </h1>
-      <div class="nes-table-responsive">
+      <div
+        class="nes-table-responsive"
+        className="otherprojectscontainer__tablecontainer"
+      >
+        <h1 className="title">
+          {!inEnglish ? "Otros proyectos" : "Other projects"}
+        </h1>
         <table class="nes-table is-bordered is-centered otherprojectscontainer__table">
           <thead>
             <tr>

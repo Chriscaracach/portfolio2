@@ -1,3 +1,8 @@
+export const esPresentation =
+  "Soy Christian, desarrollador Frontend. Durante el año 2020 tomé como ventaja la necesidad de quedarse en casa para poder formarme en el campo del Desarrollo Front End y sus tecnologías (HTML, CSS, JS, REACT, REDUX, AXIOS) con la perspectiva de dedicarme a tiempo completo a ese rubro. Provengo del ámbito de la educación privada, donde el trabajo en equipo y por proyectos es fundamental para el éxito. Tengo como objetivo aplicar mis habilidades adquiridas en mi experiencia como docente, en mis próximos proyectos laborales, sumando las habilidades técnicas necesarias.";
+export const enPresentation =
+  "I'm Christian, Frontend developer. During the year 2020 I took advantage of the need to stay at home to be able to train in the field of Front End Development and its technologies (HTML, CSS, JS, REACT, REDUX, AXIOS) with the perspective of dedicating myself full time to that field. I come from the field of private education, where teamwork and project work is essential for success. My goal is to apply my skills acquired in my experience as a teacher, in my next work projects, adding the necessary technical skills.";
+
 export const data = [
   {
     id: 0,
