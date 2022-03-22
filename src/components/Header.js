@@ -48,14 +48,14 @@ const Header = () => {
           <i class="nes-icon github is-medium"></i>
         </a>
         <a
-          href="https://drive.google.com/file/d/179K1idN3gYYNanOorZqJZu0dvpXBWF24/view?usp=sharing"
+          href="https://drive.google.com/file/d/1COzmlu7NmUCbi88Yd-HZtQMvvbdLiFo2/view?usp=sharing"
           className="header__icon"
           rel="noreferrer"
           target="_blank"
         >
           <img
             class="nes-avatar is-medium"
-            alt="Gr"
+            alt="Cv Download"
             src={cvDownload}
             style={{
               "image-rendering": "pixelated",

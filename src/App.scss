@@ -18,10 +18,7 @@
 .title {
   background-color: variables.$light !important;
 }
-// fcffa6
-// C1FFD7
-// B5DEFF
-// CAB8FF
+
 .header {
   @include pixel-borders($corner-size: 2);
   display: flex;
@@ -97,11 +94,22 @@
     width: 200px !important;
     height: 200px !important;
   }
+  &__techcontainer {
+    width: 80%;
+    display: flex;
+  }
+  &__techlogo {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .grid-container {
   width: 90%;
 }
+
 .grid {
   display: flex;
   flex-wrap: wrap;
