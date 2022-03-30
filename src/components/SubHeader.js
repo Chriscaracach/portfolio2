@@ -6,7 +6,6 @@ const SubHeader = ({ inEnglish, switchLang }) => {
       <button
         type="button"
         class={"nes-btn subheader__button " + (inEnglish ? "is-disabled" : "")}
-        onClick={switchLang}
       >
         English
       </button>

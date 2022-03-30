@@ -6,6 +6,17 @@ export const enPresentation =
 export const data = [
   {
     id: 0,
+    name: "E-commerce",
+    esDescription:
+      "Un e-commerce donde podés encontrar muchos productos organizados por categorías para comprar.",
+    enDescription:
+      "An e-commerce where you can find a lot of products ordered by category to buy.",
+    url: "https://ecommerce-ccaracach.vercel.app/",
+    repository: "https://github.com/Chriscaracach/React-ecommerce",
+    tech: ["React", "Formik", "Material UI", "Leaflet", "Err boundary"],
+  },
+  {
+    id: 1,
     name: "SuperHero",
     esDescription: "Buscá tus superhéroes favoritos y armá tu equipo",
     enDescription: "Search your favorite superheroes and build your team",
@@ -14,7 +25,7 @@ export const data = [
     tech: ["Bootstrap", "React", "Formik", "Redux", "Axios"],
   },
   {
-    id: 1,
+    id: 2,
     name: "Adminstore",
     esDescription: "Administrá tus ventas y compras de manera sencilla",
     enDescription: "Manage your sales and purchases easily",
@@ -23,7 +34,7 @@ export const data = [
     tech: ["React", "Formik", "Redux", "Firestore", "Google Auth"],
   },
   {
-    id: 2,
+    id: 3,
     name: "To-do list",
     esDescription: "Llevá un registro de tus tareas de manera cómoda",
     enDescription: "Keep track of your tasks in a comfortable way",
@@ -32,7 +43,7 @@ export const data = [
     tech: ["HTML", "Bootstrap", "React", "Firebase", "Auth"],
   },
   {
-    id: 3,
+    id: 4,
     name: "Poketeam",
     esDescription: "Armá tu equipo de Pókemons",
     enDescription: "Assemble your Pokemon team",
@@ -41,7 +52,7 @@ export const data = [
     tech: ["HTML", "CSS", "Bootstrap", "React", "Redux"],
   },
   {
-    id: 4,
+    id: 5,
     name: "CriptoAPI",
     esDescription:
       "Visualizá los precios actualizados de las criptomonedas mas conocidas",
