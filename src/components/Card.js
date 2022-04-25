@@ -55,20 +55,20 @@ const Card = ({
           <div className="card__infowrapper">
             <div className="card__bodycontainer">
               <div className="card__techcontainer">
-                <div href="a" class="nes-badge">
-                  <span className="is-primary">{tech[0]}</span>
+                <div href="a" className="nes-badge card__badgecontainer">
+                  <span className="is-primary card__badge">{tech[0]}</span>
                 </div>
-                <div className="nes-badge">
-                  <span className="is-success">{tech[1]}</span>
+                <div className="nes-badge card__badgecontainer">
+                  <span className="is-success card__badge">{tech[1]}</span>
                 </div>
-                <div className="nes-badge">
-                  <span className="is-warning">{tech[2]}</span>
+                <div className="nes-badge card__badgecontainer">
+                  <span className="is-warning card__badge">{tech[2]}</span>
                 </div>
-                <div className="nes-badge">
-                  <span className="is-error">{tech[3]}</span>
+                <div className="nes-badge card__badgecontainer">
+                  <span className="is-error card__badge">{tech[3]}</span>
                 </div>
-                <div className="nes-badge">
-                  <span className="is-dark">{tech[4]}</span>
+                <div className="nes-badge card__badgecontainer">
+                  <span className="is-dark card__badge">{tech[4]}</span>
                 </div>
               </div>
             </div>
