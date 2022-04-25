@@ -13,7 +13,7 @@ const OtherProjects = ({ inEnglish }) => {
             rel="noreferrer"
             target="_blank"
           >
-            Link
+            <i class="nes-icon github is-medium"></i>
           </a>
         </td>
       </tr>
