@@ -56,7 +56,7 @@ const Card = ({
             <div className="card__bodycontainer">
               <div className="card__techcontainer">
                 <div href="a" class="nes-badge">
-                  <span class="is-primary">{tech[0]}</span>
+                  <span className="is-primary">{tech[0]}</span>
                 </div>
                 <div className="nes-badge">
                   <span className="is-success">{tech[1]}</span>

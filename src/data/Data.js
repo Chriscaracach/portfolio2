@@ -62,6 +62,15 @@ export const data = [
     repository: "https://github.com/Chriscaracach/React-criptoapi",
     tech: ["HTML", "CSS", "Bootstrap", "React", "Fetch"],
   },
+  {
+    id: 6,
+    name: "Game of life",
+    esDescription: "Jugá al famoso Juego de la vida de Conway",
+    enDescription: "Play the famous Conway's Game of Life",
+    url: "https://gameoflife-ccaracach.vercel.app/",
+    repository: "https://github.com/Chriscaracach/React-game-of-life",
+    tech: ["HTML", "Sass", "Problem solving", "React", "Custom hooks"],
+  },
 ];
 
 export const otherProjects = [
