@@ -1,37 +1,110 @@
 @use "./variables";
-@import "node_modules/pixel-borders/src/styles/pixel-borders.scss";
+
+//--- Reset ---//
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a{
+  color: unset;
+}
+
+
+html{
+  height: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100%;
+  
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: variables.$dark;
+  color: variables.$light;
+}
+
+
 
 .App {
+  width: 100%;
   text-align: center;
-  font-family: "Press Start 2P", cursive;
-  font-size: 12px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: default !important;
-  width: 100vw;
-  background-color: variables.$light;
-  color: variables.$dark;
   min-height: 100vh;
 }
 
 .title {
-  background-color: variables.$light !important;
+  background-color: variables.$dark !important;
 }
 
 .header {
-  @include pixel-borders($corner-size: 2);
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 10px;
-  background-color: variables.$semi-light;
-  margin-top: 20px;
-  width: 90%;
+  padding: 20px 0;
+  background-color: variables.$mid;
+  width: 100%;
   &__typingtext {
-    color: #333;
+    color: variables.$light;
     font-size: 20px;
     margin-left: 10px;
 
@@ -44,17 +117,25 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding-right: 10px;
+    padding-right: 30px;
   }
   &__icon {
-    color: #333;
+    
+    color: variables.$light;
     &:hover {
-      color: #555;
+      color: variables.$semi-light;
     }
   }
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
+
+}
+
+.body {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 50px;
 }
 
 .subheader {
@@ -62,13 +143,22 @@
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
-  padding: 10px;
-  width: 90%;
+  padding: 0 30px;
 
   &__button {
-    font-size: 8px;
-    width: 80px;
+    width: 120px;
     height: 30px;
+    background-color: variables.$light;
+    border: none;
+    color: variables.$dark;
+
+    &:hover{
+      cursor: pointer;
+      background-color: variables.$semi-light;
+      color: variables.$light;
+    }
+
+
   }
   @media (max-width: 768px) {
     justify-content: center;
@@ -76,38 +166,42 @@
 }
 
 .presentation {
-  width: 90%;
-  margin-bottom: 20px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
   &__container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    width: 60%;
 
-    @media (max-width: 768px) {
-      flex-direction: column;
-    }
+
   }
   &__img {
-    @include pixel-borders($corner-size: 1);
     width: 200px !important;
-    height: 200px !important;
+    height: 250px !important;
   }
   &__techcontainer {
-    width: 80%;
     display: flex;
+    justify-content: space-between;
+    gap: 5px;
   }
   &__techlogo {
     height: 50px;
     width: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
+
+    filter: invert(90%);
   }
 }
 
 .grid-container {
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .grid {
@@ -124,23 +218,22 @@
 }
 
 .card {
-  @include pixel-borders($corner-size: 2);
-  background-color: variables.$semi-dark;
+  background-color: variables.$mid;
   width: 250px;
   height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: left !important;
 
   &__bodycontainer {
-    width: 180px;
-    height: 200px;
+    width: 80%;
   }
   &__title {
-    border-radius: 0px 0px 10px 10px;
-    background-color: variables.$light !important;
+    padding: 10px;
+    font-weight: bold;
+    background-color: variables.$dark !important;
   }
   &__buttoncontainer {
     display: flex;
@@ -151,18 +244,44 @@
     width: 100%;
   }
   &__button {
-    font-size: 8px;
-    width: 55px !important;
-    height: 30px;
+    flex: 1;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color: variables.$dark;
+    border: none !important;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &-color {
+      &1 {
+        background-color: variables.$light;
+      }
+      &2 {
+        background-color: variables.$light2;
+      }
+      &3 {
+        background-color: variables.$light3;
+      }
+    }
+  }
+  &__infowrapper {
+    width: 80%;
+    .card__bodycontainer {
+      width: 100%;
+    }
   }
   &__techcontainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    align-items: stretch;
     gap: 2px;
-  }
-  &__badgecontainer {
   }
   &__badge {
     position: relative !important;
@@ -173,10 +292,40 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  margin: 20px;
+
+  th{
+    font-weight: bold;
+  }
 
   &__table {
-    background-color: variables.$semi-dark;
+    background-color: variables.$mid;
+    border: 1px solid variables.$light;
+    border-collapse: collapse;
+
+    tr {
+      height: 60px;
+      border: 1px solid variables.$light;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  body{
+    width: 100%;
+    margin: 0;
+  }
+  .header{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card{
+    width: 300px;
+  }
+
+  .presentation__container{
+    flex-direction: column;
+    width: 90%;
   }
 }

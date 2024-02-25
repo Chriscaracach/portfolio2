@@ -1,37 +1,30 @@
 import React from "react";
 import { otherProjects } from "../data/Data";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
-const OtherProjects = ({ inEnglish }) => {
+const OtherProjects = ({ lang }) => {
   const map = otherProjects.map((project) => {
     return (
       <tr>
         <td>{project.name}</td>
         <td>
-          <a
-            class="nes-btn"
-            href={project.repository}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <i class="nes-icon github is-medium"></i>
+          <a href={project.repository} rel="noreferrer" target="_blank">
+            <GitHubIcon fontSize="large" />
           </a>
         </td>
       </tr>
     );
   });
   return (
-    <div className="nes-container is-centered with-title otherprojectscontainer">
-      <div
-        class="nes-table-responsive"
-        className="otherprojectscontainer__tablecontainer"
-      >
+    <div className="otherprojectscontainer">
+      <div className="otherprojectscontainer__tablecontainer">
         <h1 className="title">
-          {!inEnglish ? "Otros proyectos" : "Other projects"}
+          {lang === "spanish" ? "Otros proyectos" : "Other projects"}
         </h1>
-        <table class="nes-table is-bordered is-centered otherprojectscontainer__table">
+        <table class="otherprojectscontainer__table">
           <thead>
             <tr>
-              <th>{!inEnglish ? "Proyecto" : "Project"}</th>
+              <th>{lang === "spanish" ? "Proyecto" : "Project"}</th>
               <th>URL</th>
             </tr>
           </thead>

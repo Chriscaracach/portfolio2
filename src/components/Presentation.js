@@ -9,21 +9,19 @@ import reactLogo from "../img/react.svg";
 import reduxLogo from "../img/redux.svg";
 import githubLogo from "../img/github.svg";
 
-const Presentation = ({ inEnglish }) => {
+const Presentation = ({ lang }) => {
   return (
-    <div className="nes-container is-centered with-title presentation">
-      <h1 className="title">{!inEnglish ? "Sobre mí" : "About me"}</h1>
+    <div className="presentation">
+      <h1 className="title">{lang === "spanish" ? "Sobre mí" : "About me"}</h1>
       <div className="presentation__container">
         <img
-          className="nes-avatar is-large presentation__img"
+          className="presentation__img"
           alt="Christian Caracach"
           src={profilePhoto}
         />
-        <p className="nes-text">
-          {!inEnglish ? esPresentation : enPresentation}
-        </p>
+        <p>{lang === "spanish" ? esPresentation : enPresentation}</p>
       </div>
-      <div className="presentation-techcontainer">
+      <div className="presentation__techcontainer">
         <img src={htmlLogo} alt="" className="presentation__techlogo" />
         <img src={sassLogo} alt="" className="presentation__techlogo" />
         <img src={bsLogo} alt="" className="presentation__techlogo" />

@@ -5,18 +5,18 @@ import OtherProjects from "./OtherProjects";
 import Presentation from "./Presentation";
 
 const Body = () => {
-  const [inEnglish, setInEnglish] = useState(false);
+  const [lang, setLang] = useState("spanish");
 
-  const switchLang = () => {
-    setInEnglish(!inEnglish);
+  const switchLang = (lang) => {
+    setLang(lang);
   };
 
   return (
-    <div className="App">
-      <SubHeader switchLang={switchLang} inEnglish={inEnglish}></SubHeader>
-      <Presentation inEnglish={inEnglish}></Presentation>
-      <Grid inEnglish={inEnglish}></Grid>
-      <OtherProjects inEnglish={inEnglish}></OtherProjects>
+    <div className="body">
+      <SubHeader switchLang={switchLang} lang={lang} />
+      <Presentation lang={lang} />
+      <Grid lang={lang} />
+      <OtherProjects lang={lang} />
     </div>
   );
 };

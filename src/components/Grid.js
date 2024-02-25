@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Card from "./Card";
 import { data } from "../data/Data";
 
-const Grid = ({ inEnglish }) => {
+const Grid = ({ lang }) => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -19,14 +19,14 @@ const Grid = ({ inEnglish }) => {
         url={project.url}
         repository={project.repository}
         tech={project.tech}
-        inEnglish={inEnglish}
+        lang={lang}
       ></Card>
     );
   });
 
   return (
-    <div className="nes-container is-centered with-title grid-container">
-      <h1 className="title">{!inEnglish ? "Proyectos" : "Projects"}</h1>
+    <div className="grid-container">
+      <h1 className="title">{lang === "spanish" ? "Proyectos" : "Projects"}</h1>
       <div className="grid">{map}</div>
     </div>
   );

@@ -1,6 +1,9 @@
 import React from "react";
 import TypeAnimation from "react-type-animation";
-import cvDownload from "../img/cvdownload.png";
+import EmailIcon from "@mui/icons-material/Email";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import DescriptionIcon from "@mui/icons-material/Description";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Header = () => {
   return (
@@ -19,7 +22,7 @@ const Header = () => {
             1000,
           ]}
           repeat={20}
-          wrapper="h3"
+          wrapper="h1"
         />
       </div>
       <div className="header__social">
@@ -29,7 +32,7 @@ const Header = () => {
           rel="noreferrer"
           target="_blank"
         >
-          <i class="nes-icon gmail is-medium"></i>
+          <EmailIcon fontSize="large" />
         </a>
         <a
           href="https://www.linkedin.com/in/christian-caracach/"
@@ -37,7 +40,7 @@ const Header = () => {
           rel="noreferrer"
           target="_blank"
         >
-          <i class="nes-icon linkedin is-medium"></i>
+          <LinkedInIcon fontSize="large" />
         </a>
         <a
           href="https://github.com/Chriscaracach"
@@ -45,7 +48,7 @@ const Header = () => {
           rel="noreferrer"
           target="_blank"
         >
-          <i class="nes-icon github is-medium"></i>
+          <GitHubIcon fontSize="large" />
         </a>
         <a
           href="https://drive.google.com/file/d/1whHYRqXlLShilXiKkvUgm3VJC1TC9dOE/view?usp=sharing"
@@ -53,16 +56,7 @@ const Header = () => {
           rel="noreferrer"
           target="_blank"
         >
-          <img
-            class="nes-avatar is-medium"
-            alt="Cv Download"
-            src={cvDownload}
-            style={{
-              "image-rendering": "pixelated",
-              backgroundColor: "#fefefe",
-              borderRadius: "10px",
-            }}
-          />
+          <DescriptionIcon fontSize="large" />
         </a>
       </div>
     </header>

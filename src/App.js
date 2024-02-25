@@ -1,11 +1,12 @@
 import "./App.scss";
+import "./override.scss";
 import Header from "./components/Header";
 import Body from "./components/Body";
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      <Header />
       <Body />
     </div>
   );
